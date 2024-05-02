@@ -207,7 +207,34 @@ Shopify.routes.root = "/";</script>
         --color-badge-border: 0,0,0;
         --payment-terms-background-color: rgb(136 129 13);
       }
-      
+      .n-columns-2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-weight: 700;
+	}
+	.n-columns-2 a {
+    text-align: center;
+	}
+	.login, .rtp, .register {
+    color: #fff;
+    padding: 13px 10px;
+	}
+	.login, .login-button {
+    background: linear-gradient(to bottom,#009adf 0,#5c797d 100%);
+	}
+	.register, .register-button {
+    background: linear-gradient(to bottom,#002a3d 0,#5c797d 100%);
+	}
+	.rtp, .rtp-button {
+    background: linear-gradient(to bottom,#f1b500 0,#67410a 100%);
+	}
+	.kedip {
+	animation: blinker 1s linear infinite;
+	}
+	@keyframes blinker {
+	50% { opacity: 0;
+	}
+	}
 
       body, .color-scheme-1, .color-scheme-2, .color-scheme-3, .color-scheme-4, .color-scheme-5 {
         color: rgba(var(--color-foreground), 0.75);
@@ -1542,4 +1569,3 @@ Item added to your cart
       };
     </script><script src="//d7d3d3-f4.myshopify.com/cdn/shop/t/1/assets/predictive-search.js?v=162273246065392412141714649387" defer="defer"></script></body>
 </html>
-
